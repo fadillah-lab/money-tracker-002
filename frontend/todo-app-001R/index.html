@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>ToDoList</h1>
+
+        <!-- Progress Section -->
+        <div class="checkpoint-bar">
+            <div class="progress"></div>
+        </div>
+
+        <!-- Form Section -->
+        <form id="add-task">
+            <div class="form-group">
+                <label for="time">Time :</label>
+                <input type="time" id="time" class="input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="activity">Activity :</label>
+                <input type="text" id="activity" class="input" required>
+            </div>
+
+            <button type="submit" class="button" id="add">Add</button>
+        </form>
+
+        <!-- Table Section -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableTask"></tbody>
+        </table>
+    </div>
+
+    <!-- ================= MODAL AREA ================= -->
+
+    <div id="modalOverlay" class="modal-overlay hidden">
+
+        <!-- Edit Modal -->
+        <div class="modal hidden" id="editModal">
+            <h3>Edit Task</h3>
+            <input type="text" id="editActivity">
+            <input type="time" id="editTime">
+            <div class="modal-actions">
+                <button id="saveEdit">Save</button>
+                <button type="button" class="closeModal">Cancel</button>
+            </div>
+        </div>
+
+        <!-- Delete Modal -->
+        <div class="modal hidden" id="deleteModal">
+            <h3>Are you sure you want to delete this task?</h3>
+            <div class="modal-actions">
+                <button id="confirmDelete">Yes</button>
+                <button type="button" class="closeModal">No</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+
+    <!-- Main JS -->
+    <script type="module" src="./script/main.js"></script>
+
+</body>
+</html>

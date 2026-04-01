@@ -1,3 +1,21 @@
+# Money Tracker App
+
+Simple money tracking app built with React.
+
+## Features
+- Add transaction
+- Edit & delete transaction
+- Filter by date
+- Dashboard (daily, monthly, yearly)
+
+## Tech Stack
+- React
+- JavaScript
+- CSS
+
+## Demo
+Coming soon...
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

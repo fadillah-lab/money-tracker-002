@@ -1,0 +1,33 @@
+.filter-wrapper{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 12px;
+}
+
+.filter-by-date{
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.filter-by-date label{
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.filter-by-date input {
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.filter-DMY select {
+    font-size: 12px;
+    padding: 5;
+}

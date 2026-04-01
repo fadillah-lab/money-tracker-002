@@ -1,0 +1,95 @@
+/* SIDEBAR BASE */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: #111827;
+  color: white;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+/* OPEN */
+.sidebar.open {
+  width: 220px;
+}
+
+/* CLOSED */
+.sidebar.closed {
+  width: 70px;
+  align-items: center;
+}
+
+/* BUTTON */
+.toggle-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* LINKS */
+.sidebar a {
+  text-decoration: none;
+  color: #d1d5db;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.2s;
+  display: block;
+  text-align: left;
+}
+
+/* CENTER kalau closed */
+.sidebar.closed a {
+  text-align: center;
+}
+
+/* HOVER */
+.sidebar a:hover {
+  background: #1f2937;
+}
+
+/* ACTIVE */
+.sidebar .active {
+  background: #4f46e5;
+  color: white;
+}
+
+.nav-item {
+  position: relative;
+}
+
+/* TOOLTIP */
+.tooltip {
+  position: absolute;
+  left: 70px;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  background: #111827;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+/* Muncul saat hover */
+.nav-item:hover .tooltip {
+  opacity: 1;
+  transform: translateY(-50%) translateX(5px);
+}
+
+.tooltip {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
